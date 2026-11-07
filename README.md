@@ -2,11 +2,9 @@
 
 A small online store built with **Vue 3**. Browse products, search and filter them, open a product page, manage a cart that survives a page refresh, and go through a validated checkout form.
 
-**[Live demo](https://YOUR-LIVE-LINK-HERE)**
+**[Live demo](https://vue3-ecommerce.vercel.app/)**
 
-<!-- Add a screenshot or GIF here: ![VueStore](./screenshot.png) -->
-
-> This is a portfolio project. The login is a demo, and checkout does not take payment or send orders anywhere.
+![vue3-ecommerce](./src/Screenshot%202026-11-07%20215255.png)
 
 ## Features
 
@@ -61,10 +59,10 @@ GitHub Pages does not support this out of the box. Use Netlify or Vercel, or swi
 
 ## What I learned
 
-<!-- Write this in your own words. For example: -->
-<!-- - Why the cart total should come from one function that the tests also cover -->
-<!-- - Why data from localStorage must be validated before it is used -->
-<!-- - How a route guard protects a page and redirects back after login -->
+- **State Persistence & Safety:** Implemented safe `localStorage` synchronization via Pinia, ensuring that corrupted or malformed saved data is handled gracefully without crashing the app.
+- **Navigation Guards:** Secured private routes using Vue Router hooks and managed dynamic redirection post-login.
+- **Robust Unit Testing:** Wrote unit tests with Vitest to cover critical business logic, ensuring cart calculations and form validation remain bug-free.
+- **Component Architecture:** Leveraged Vue 3 Composition API (`<script setup>`) for clean, maintainable, and modular code structuring.
 
 ## Possible improvements
 
